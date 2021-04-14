@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav h1{
+    font-size: 20px;
+
+}
+nav .onglets{
+display: flex;
+flex-wrap: wrap;
+}
+
+nav .onglets p{
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav .onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+
+}
+/* fin de la barre navigation */
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+header button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: orange ;
+}
+
+header,body,html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background: url("https://www.foodiesfeed.com/wp-content/uploads/2019/02/messy-pizza-on-a-black-table.jpg") no-repeat center center;
+    background-size: cover;
+}
+/* fin du header */
+
+
+
+/* section principale */
+
+.main{
+    margin: 20px;
+    margin-top: 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  /* Toutes les cartes */
+  .cards{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .cards .card{
+    margin-right: 20px;
+    cursor:pointer;
+  }
+  .cards .card img{
+    width: 350px;
+  }
+  .cards .card .card-header{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  .cards .card .card-body p{
+    margin-top: -10px;
+  }
+   
+    /* fin de toutes les cartes */
+
+/* fin de section principale */
+
+/* pied de page */
+footer {
+    margin-top: 100px;
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  footer .social-media{
+      display: flex;
+  }
+  footer .social-media p{
+      margin-right: 15px;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px;
+      text-align: center;
+      width: 20px;
+      cursor: pointer;      
+  }
+/* fin du pied de page */
+
+
+/* responsive*/
+
+@media screen and (max-width: 640px){
+    nav .onglets .link, nav h1{
+      display:none;
+    }
+    .cards .card img{
+      width: 300px;
+    }
+}
+/* fin du responsive*/
+/* rubrique commandes*/
+.cart-page{
+    margin: 80px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width:100%;
+    max-width: 600px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/* fin de rubrique commandes*/
+
+
